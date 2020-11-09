@@ -82,7 +82,7 @@ function purchasedMeme(uint _id) public payable {
     _meme.purchased = true;
     memes[_id] = _meme;
     address(_seller).transfer(msg.value);
-    emit MemePurchased(memecount, _meme.name,meme.price,msg.sender,_meme.upvote,_meme.downvote,false,true);
+    emit MemePurchased(memecount, _meme.name,meme.price,msg.sender,_meme.upvotes,_meme.downvotes,false,true);
 }
 
 function challengedMeme(uint _id) public {
@@ -93,18 +93,18 @@ function challengedMeme(uint _id) public {
     //require(_seller != msg.sender);
     
     
-    emit MemeChallenged(memecount, _meme.name,meme.price,msg.sender,_meme.upvote,_meme.downvote,true,false);
+    emit MemeChallenged(memecount, _meme.name,meme.price,msg.sender,_meme.upvotes,_meme.downvotes,true,false);
 }
 
 function voteMeme(uint _id, uint vote ) public {
     Meme memeory _meme =  memes[_id];
     require(_meme.id>0&&_meme.id<= memecount);
     require(!_meme.purchased);
-    if(vote== 0) _meme.downvote++;
-    else if(vote==1) _meme.upvote++;
+    if(vote== 0) _meme.downvotes++;
+    else if(vote==1) _meme.upvotes++;
     memes[id] = _meme;
 
-    emit MemeVoted(memecount, _meme.name,meme.price,msg.sender,_meme.upvote,_meme.downvote,true,false);
+    emit MemeVoted(memecount, _meme.name,meme.price,msg.sender,_meme.upvotes,_meme.downvotes,true,false);
 
 }
 
