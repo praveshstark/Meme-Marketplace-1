@@ -1,0 +1,163 @@
+
+.vertical-nav {
+  min-width: 10rem;
+  width: 40vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+.preview{
+  width: 65%;
+  height: 100%;
+  margin-top:-83% ;
+  margin-left:60% 
+}
+
+#dropdownMenuButton{
+  background-color: red;
+  margin-left: 70%;
+  margin-top: -20%;
+}
+#dropdownMenuButton1{
+  background-color: red;
+  margin-left: 107%;
+  margin-top: -23%;
+  border-radius: 20px;
+  font-weight: 400;
+}
+.menu_active{
+  color: #3498db;
+  font-weight: bolder;
+  
+}
+.vertical-nav a:hover{
+    color: #3498db !important;
+}
+.token{
+  color: #fff;
+  margin-top: 20px;
+}
+.dankr{
+  width: 120%;
+}
+.dankrr{
+  width: 900px;
+  height: 750px;
+}
+.reg1{
+  font-weight: 800;
+  text-align: center;
+
+}
+.reg2{
+  font-size: large;
+  font-weight: 400;
+  text-align: center;
+  
+}
+.item{
+  height: 60%;
+  width:120% ;
+  text-align: center;
+  color: #aaa;
+}
+#item1{
+  height: 100%;
+  width:120% ;
+  margin-top: -60px;
+  text-align: center;
+  color: #aaa;
+  
+}
+.inp{
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color:white;
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+
+img{
+  max-width:180px;
+}
+input[type=file]{
+padding:10px;
+background:#2d2d2d;}
+
+.dank{
+  font-size: 20px;
+}
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 20rem;
+  transition: all 0.4s;
+}
+.page-content1 {
+  width: 140%;
+  margin-left: -3rem;
+  transition: all 0.4s;
+}
+.tag{
+  margin-top: -70px;
+}
+.home{
+  font-size: 70px;
+  font-weight: 500;
+  
+}
+.lead{
+  font-weight: 500;
+}
+.reg{
+  text-align: center;
+}
+
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+body {
+  background: rgb(240, 174, 51));
+  background: -webkit-linear-gradient(to right, #e6ba29);
+  background: linear-gradient(to right, #e49605, #e0a027);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
